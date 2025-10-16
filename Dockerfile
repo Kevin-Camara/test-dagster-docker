@@ -1,8 +1,10 @@
-FROM python:3.12-slim
+FROM python:3.11-slim
 
-RUN pip install dagster dagster-docker
-
-COPY . /app
 WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
-CMD ["dagster", "api", "grpc", "--python-file", "your_pipeline_file.py", "--host", "0.0.0.0"]
+COPY hello.py hello.py
+COPY workspace.yaml workspace.yaml
+
+CMD ["dagit", "-h", "0.0.0.0", "-p", "3000"]
