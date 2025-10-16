@@ -38,7 +38,7 @@ def get_data_brick_iqvia(context: dg.AssetExecutionContext) -> pd.DataFrame:
 
 
 @dg.asset_check(asset=get_data_brick_iqvia.partitions_def)
-def check_columns_brick_iqvia(get_data_brick_iqvia: dict[str, pd.Dataframe]) -> dg.AssetCheckResult:
+def check_columns_brick_iqvia(get_data_brick_iqvia: dict[str, pd.DataFrame]) -> dg.AssetCheckResult:
 
     failed_partitions = []
     
