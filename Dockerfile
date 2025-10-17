@@ -14,5 +14,4 @@ RUN mkdir -p /app/dagster_home && \
 # Copia código
 COPY hello.py workspace.yaml .
 
-CMD ["dagster-webserver", "-h", "0.0.0.0", "-p", "3000"]
-CMD ["dagster-daemon", "run"]
+CMD ["sh","-c","dagster-webserver -h 0.0.0.0 -p 3000 & dagster-daemon run"]
