@@ -1,3 +1,4 @@
 dagster
-dagit
+dagster-webservice
+dagster-dg-cli
 pandas
