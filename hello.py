@@ -8,7 +8,7 @@ particoes = dg.DynamicPartitionsDefinition(name="arquivos")
 @dg.asset()
 def get_name_files(context: dg.AssetExecutionContext) -> list[str]:
     context.log.info("Identificando arquivos csv armazenados")
-    archives_path = "./archives"
+    archives_path = "/app/archives"
     csv_files = []
     for file_name in os.listdir(archives_path):
         if file_name.endswith(".csv"):
