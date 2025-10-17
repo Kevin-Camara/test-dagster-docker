@@ -1,4 +1,4 @@
 dagster
-dagster-webservice
+dagster-webserver
 dagster-dg-cli
 pandas
