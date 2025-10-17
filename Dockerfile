@@ -5,7 +5,8 @@ WORKDIR /app
 # Instala dependências
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-COPY /archives
+COPY archives /app/
+
 
 # Cria DAGSTER_HOME com permissão
 RUN mkdir -p /app/dagster_home && \
