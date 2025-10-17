@@ -3,6 +3,6 @@ load_from:
       relative_path: hello.py
 
   - grpc_server:
-      host: u00c0g4gsssgkkw0ks00ssks-154946962568  # Nome do container no Coolify
+      host: u00c0g4gsssgkkw0ks00ssks-161441139738  # Nome do container no Coolify
       port: 4266
       location_name: 'novo_projeto_assets'
