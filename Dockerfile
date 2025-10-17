@@ -14,4 +14,4 @@ RUN mkdir -p /app/dagster_home && \
 # Copia código
 COPY hello.py workspace.yaml .
 
-CMD ["dagit", "-h", "0.0.0.0", "-p", "3000"]
+CMD ["dagster-webservice", "-h", "0.0.0.0", "-p", "3000"]
