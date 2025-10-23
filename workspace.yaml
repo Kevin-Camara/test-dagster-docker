@@ -6,3 +6,8 @@ load_from:
       host: project-dagster  # Nome do container no Coolify
       port: 4266
       location_name: 'novo_projeto_assets'
+      
+  - grpc_server:
+      host: santa_api  # Nome do container no Coolify
+      port: 4267
+      location_name: 'santa_api'
