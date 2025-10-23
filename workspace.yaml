@@ -8,6 +8,6 @@ load_from:
       location_name: 'novo_projeto_assets'
       
   - grpc_server:
-      host: santa_api  # Nome do container no Coolify
+      host: santa-api  # Nome do container no Coolify
       port: 4267
       location_name: 'santa_api'
